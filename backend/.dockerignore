@@ -1,0 +1,37 @@
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# ── Virtual Environments ──────────────────────────────────────
+venv/
+env/
+.venv/
+
+# ── Environment Files ─────────────────────────────────────────
+.env
+.env.example
+
+# ── Database (will be created fresh in container) ─────────────
+database.db
+
+# ── Generated Files (created at runtime) ─────────────────────
+static/uploads/
+static/heatmaps/
+static/reports/
+
+# ── Git ───────────────────────────────────────────────────────
+.git/
+.gitignore
+
+# ── Tests ─────────────────────────────────────────────────────
+test_backend.py
+
+# ── OS Files ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log

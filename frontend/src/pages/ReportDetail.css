@@ -1,0 +1,194 @@
+.detail-container {
+  max-width: 1000px;
+  margin   : 0 auto;
+  padding  : 32px 24px;
+  display  : flex;
+  flex-direction: column;
+  gap      : 20px;
+}
+
+/* ── Header ── */
+.detail-header {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : flex-end;
+  gap            : 16px;
+  flex-wrap      : wrap;
+}
+
+.back-link {
+  background: none;
+  border    : none;
+  color     : #2563eb;
+  font-size : 13px;
+  font-weight: 500;
+  cursor    : pointer;
+  font-family: 'DM Sans', sans-serif;
+  padding   : 0;
+  margin-bottom: 8px;
+  display   : block;
+}
+
+.back-link:hover { text-decoration: underline; }
+
+.detail-header h1 {
+  font-family  : 'Sora', sans-serif;
+  font-size    : 26px;
+  font-weight  : 700;
+  color        : #1e3a5f;
+  margin-bottom: 4px;
+}
+
+.detail-header p { font-size: 13px; color: #64748b; }
+
+.dl-btn {
+  background   : #1e3a5f;
+  color        : white;
+  border       : none;
+  border-radius: 10px;
+  padding      : 11px 22px;
+  font-size    : 14px;
+  font-weight  : 600;
+  cursor       : pointer;
+  font-family  : 'DM Sans', sans-serif;
+  transition   : background 0.2s;
+  white-space  : nowrap;
+}
+
+.dl-btn:hover { background: #1e40af; }
+
+/* ── Banner ── */
+.detail-banner {
+  border       : 1.5px solid;
+  border-radius: 14px;
+  padding      : 22px 26px;
+  display      : flex;
+  align-items  : center;
+  gap          : 18px;
+}
+
+.detail-banner h2 {
+  font-family  : 'Sora', sans-serif;
+  font-size    : 20px;
+  font-weight  : 700;
+  margin-bottom: 4px;
+}
+
+.detail-banner p { font-size: 13px; color: #475569; }
+
+/* ── Grid ── */
+.detail-grid-2 {
+  display              : grid;
+  grid-template-columns: 1fr 1fr;
+  gap                  : 16px;
+}
+
+/* ── Cards ── */
+.detail-card {
+  background   : white;
+  border-radius: 12px;
+  border       : 1px solid #e2e8f0;
+  padding      : 22px 24px;
+  box-shadow   : 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.detail-card h4 {
+  font-family  : 'Sora', sans-serif;
+  font-size    : 14px;
+  font-weight  : 600;
+  color        : #1e3a5f;
+  margin-bottom: 16px;
+}
+
+.detail-rows { display: flex; flex-direction: column; gap: 10px; }
+
+.detail-row {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  font-size      : 13px;
+  padding-bottom : 10px;
+  border-bottom  : 1px solid #f8fafc;
+}
+
+.detail-row:last-child { border-bottom: none; padding-bottom: 0; }
+.detail-row span   { color: #64748b; }
+.detail-row strong { color: #1e293b; font-weight: 600; }
+
+/* ── Images ── */
+.detail-images {
+  display              : grid;
+  grid-template-columns: 1fr 1fr;
+  gap                  : 16px;
+  margin-top           : 4px;
+}
+
+.detail-img-panel p {
+  font-size    : 13px;
+  color        : #64748b;
+  margin-bottom: 10px;
+}
+
+.detail-scan-img {
+  width        : 100%;
+  height       : 280px;
+  object-fit   : contain;
+  background   : #000;
+  border-radius: 8px;
+  display      : block;
+}
+
+/* ── Disclaimer ── */
+.detail-disclaimer {
+  display      : flex;
+  gap          : 12px;
+  background   : #f8fafc;
+  border       : 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding      : 14px 18px;
+  font-size    : 12px;
+  color        : #64748b;
+  line-height  : 1.6;
+}
+
+.detail-disclaimer span { font-size: 16px; flex-shrink: 0; }
+
+/* ── States ── */
+.loading-state {
+  text-align: center;
+  padding   : 80px;
+  color     : #64748b;
+  font-size : 14px;
+}
+
+.error-state {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  padding       : 80px 24px;
+  gap           : 12px;
+  color         : #64748b;
+}
+
+.error-state span { font-size: 48px; }
+.error-state p    { font-size: 14px; }
+
+.error-state button {
+  background   : #2563eb;
+  color        : white;
+  border       : none;
+  border-radius: 8px;
+  padding      : 9px 18px;
+  font-size    : 13px;
+  cursor       : pointer;
+  font-family  : 'DM Sans', sans-serif;
+  margin-top   : 4px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .detail-grid-2  { grid-template-columns: 1fr; }
+  .detail-images  { grid-template-columns: 1fr; }
+  .detail-header  { flex-direction: column; align-items: flex-start; }
+  .dl-btn         { width: 100%; text-align: center; }
+}
