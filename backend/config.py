@@ -26,6 +26,6 @@ class Config:
     # Add your actual Vercel URL after deployment
     CORS_ORIGINS = [
         "http://localhost:3000",                          # local dev
-        "https://osteoscan-ai.vercel.app",           # ← replace with your Vercel URL
+        "https://osteoscan-ai-l5lk.vercel.app",           # ← replace with your Vercel URL
         os.environ.get('FRONTEND_URL', ''),              # set as env var on HuggingFace
     ]
