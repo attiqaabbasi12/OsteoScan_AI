@@ -92,7 +92,7 @@ npm start
 
 - Architecture : Swin Transformer (swin_base_patch4_window7_224)
 - Classes      : Normal, Osteopenia, Osteoporosis
-- Accuracy     : 90.78%
+- Accuracy     : 90.10%
 - Explainability: GradCAM++ heatmap
 
 Place your trained model at: `backend/model/swin_transformer.pth`
